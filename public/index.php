@@ -1,12 +1,11 @@
 <?php
 
-
   // Parametros pegos na url => ?all=string&total=number
   $all = explode('/', $_GET['all'])[0] === 'true'; // boolean
   $total = (int) explode('/', $_GET['total'])[0]; // number
 
   // Pega o conteúdo do arquivo frases.json
-  $contents = file_get_contents('frases.json');
+  $contents = file_get_contents('./frases.json');
 
   // Decodifica de json para Array
   $json = json_decode($contents, true);

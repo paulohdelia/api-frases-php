@@ -1,5 +1,7 @@
 # API de frases com PHP
 
+A [api de frases aleatórias](https://api-frases-php.herokuapp.com/) está hospedada no Heroku e você pode utilizar a partir desta url https://api-frases-php.herokuapp.com/.
+
 ## O que é ?
 
 Uma API simples que retorna um array com frases diversas em formato JSON.
@@ -7,9 +9,9 @@ Uma API simples que retorna um array com frases diversas em formato JSON.
 ## Por que PHP ?
 Uma das obrigações de um trabalho na faculdade é "o sistema precisa ter alguma coisa em PHP", então está aqui a implementação em PHP. Uma API que vai retornar frases aleatórias para serem exibidas no front-end do site.
 
-## Como funciona ?
+## Como usar ?
 
-É bem simples, apenas faça uma chamada HTTP do tipo GET para o endereço que está sendo utilizado. Se desejar, passe alguns parâmetros para personalizar a resposta.
+É bem simples, faça chamadas do tipo GET/ para essa url https://api-frases-php.herokuapp.com/. Se desejar, passe alguns parâmetros para personalizar a resposta.
 
 ## Parâmetros
 
@@ -32,7 +34,7 @@ Retorna um array com frases aleatórias. O número de frases é igual ao valor d
 
 - Exemplo de uso
   - GET/
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`http://localhost:3000/?total=3`
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://api-frases-php.herokuapp.com/?total=3`
   - RESPONSE
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[ "frase 3", "frase 8", "frase 12" ]`
 
@@ -46,7 +48,7 @@ Retorna todos os itens do array
 
 - Exemplo de uso
   - GET/
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`http://localhost:3000/?all=true`
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://api-frases-php.herokuapp.com/?all=true`
   - RESPONSE
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[ "frase 1", ..., "última frase" ]`
 
@@ -56,9 +58,9 @@ Retorna todos os itens do array
 
 - Exemplo
   - GET/
-    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`http://localhost:3000/?total=0`
-    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`http://localhost:3000/?all=false`
-    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`http://localhost:3000/?total=qwerty&all=99`
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://api-frases-php.herokuapp.com/?total=0`
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://api-frases-php.herokuapp.com/?all=false`
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://api-frases-php.herokuapp.com/?total=qwerty&all=99`
   - RESPONSE
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[ "frase aleatória" ]`
 
@@ -66,6 +68,6 @@ Retorna todos os itens do array
 
 - Exemplo
   - GET/
-    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`http://localhost:3000/?all=true&total=4`
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`https://api-frases-php.herokuapp.com/?all=true&total=4`
   - RESPONSE
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`[ "frase 1", "frase 7", "frase 26", "frase 31 ]`

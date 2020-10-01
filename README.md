@@ -4,6 +4,9 @@
 
 Uma API simples que retorna um array com frases diversas em formato JSON.
 
+## Por que PHP ?
+Uma das obrigações de um trabalho na faculdade é "o sistema precisa ter alguma coisa em PHP", então está aqui a implementação em PHP. Uma API que vai retornar frases aleatórias para serem exibidas no front-end do site.
+
 ## Como funciona ?
 
 É bem simples, apenas faça uma chamada HTTP do tipo GET para o endereço que está sendo utilizado. Se desejar, passe alguns parâmetros para personalizar a resposta.
